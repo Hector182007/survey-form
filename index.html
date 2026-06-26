@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de ecncuesta</title>
+<link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+  <h1 id="title">Formulario de ecuesta</h1>
+  <p id="description">Por fabor, complete el siguiente formulario de ecuesta.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label" placeholder="tu nombre" required>Nombre:</label>
+      <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+
+  <label for="email" id="email-label">Correo electronico:</label>
+      <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+
+      <label form="number" id="number-label">Edad:</label>
+      <input type="number" id="number" name="age" min="18" max="99"  placeholder="Ingrese su edad" required>
+
+      
+     <select id="dropdown">
+      <option value="opcion 1">opcion 1</option>
+      <option value="opcion 2">opcion 2</option>
+        </select>
+<input type="radio" name="opcion" value="r1"> Radio 1
+  <input type="radio" name="opcion" value="r2"> Radio 2
+
+  <input type="checkbox" value="c1"> Check 1
+  <input type="checkbox" value="c2"> Check 2
+  <input id="name" placeholder="name" required>
+  
+      <textarea id="comments" name="comments" placeholder="Ingrese sus comentarios"></textarea>
+      <button type="submit" id="submit">Enviar</button>
+</form>
+</body>
+</html>
